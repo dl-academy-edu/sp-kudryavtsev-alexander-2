@@ -1,28 +1,61 @@
 // Подключение компонентов
 @import "./header/header";
 @import "./footer/footer";
+@import "./button/button";
 
-body {
-  font-family: Oswald, sans-serif;
+
+body { 
+    
+  font-family: 'Open Sans', 'sans-serif';
+  font-family: 'Montserrat', 'sans-serif';
+  font-family: 'Crimson Text', 'serif';
+margin: 0; 
 }
 
+a {
+   text-decoration: none; 
+  }
+html { 
+  box-sizing: border-box; 
+}
+*, *::before, *::after { 
+  box-sizing: inherit; 
+}
+
+img {
+   max-width: 100%;
+
+   
+}
 .container {
+  margin: 0 auto;
   width: 100%;
   max-width: 1180px;
-  margin: 0 auto;
-  padding-right: 20px;
-  padding-left: 20px;
+ 
+
 }
+.pourple-link {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  background-color: #000000;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 161px;
+  min-height: 40px;
+  padding: 9px;
 
-.title-block {
-  margin: 0 0 20px 0;
+ 
+}
+.pourple-link:hover {
+  background-color: #C29974;
+}
+.pourple-link:active {
 
-  &_one {
-    font-size: 30px;
-    text-transform: uppercase;
-  }
-  &_two {
-    font-size: 25px;
-    max-width: 500px;
-  }
+  background-color: #CFAF91
 }

@@ -1,14 +1,26 @@
-.first-conteiner {
+
+.poster {
+    position: relative;    
+    background: #EEE4DB; 
+
+
+  &__palochki {
+    list-style-type: none; 
+    position: absolute;
+    padding: 0;
+    left: 28px;
+  }
+  &__cifra {
+    width: 61px;
+}
+  &__first-conteiner {
     padding-left: 133px;
     padding-bottom: 89px;
     padding-top: 89px;
     margin-top: 130px;
     position: relative;
 }
-
-
-
-.poster-title {
+  &__title {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: bold;
@@ -16,18 +28,31 @@
     line-height: 110%;
     color: #1E0606;  
     margin-top: 0;
-    
 }
-.poster-down {
-    
-width: 1180px;
-height: 39px;
-margin: 0;
-background: #C29974;
-
-
+  &__picture {
+    display: flex;
+    position: absolute;
+    width: 635.49px;
+    height: 461px;
+    left: 448px;
+    bottom: 0%;    
 }
-.poster-mini {
+  &__Designed-in-Slovenia {
+    font-family: 'Crimson Text';
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 0;
+}
+  &__down {
+    width: 1180px;
+    height: 39px;
+    margin: 0;
+    background: #C29974;
+}
+
+  &__mini {
     font-family: "Open Sans";
 font-style: normal;
 font-weight: bold;
@@ -40,30 +65,8 @@ align-items: center;
 text-align: center;
 text-transform: uppercase;
 }
-
-.poster {
-    
-    
-   position: relative;
-    
-    background: #EEE4DB;
-
-   
-   
-
-
 }
 
-.poster-picture {
-    display: flex;
-    
-    position: absolute;
-width: 635.49px;
-height: 461px;
-left: 448px;
-bottom: 0%;
-    
-}
 
 .partners {
     margin-top: 91px;
@@ -91,20 +94,12 @@ bottom: 0%;
 height: 47px;
 left: 140px;
 top: 2043px;
-
-/* Title two */
-
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: bold;
 font-size: 38px;
 line-height: 46px;
-/* identical to box height */
-
 text-transform: uppercase;
-
-/* Black */
-
 color: #1E0606;
 }
 
@@ -119,9 +114,6 @@ font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 22px;
-
-/* Black */
-
 color: #1E0606;
 }
 
@@ -136,9 +128,6 @@ font-style: italic;
 font-weight: normal;
 font-size: 26px;
 line-height: 32px;
-/* identical to box height */
-
-
 color: #1E0606;
 }
 .about-us:hover {
@@ -183,15 +172,7 @@ height: 196px;
 
 }
 
-.Designed-in-Slovenia {
-    font-family: 'Crimson Text';
-font-style: italic;
-font-weight: normal;
-font-size: 20px;
-line-height: 25px;
-margin-top: 0;
 
-}
 .category-title {
     font-family: 'Montserrat';
 font-style: normal;
@@ -533,14 +514,4 @@ margin-top: 26px;
         
 }
 
-.palochki {
-    list-style-type: none; 
-    position: absolute;
-    padding: 0;
-    left: 28px;
-    
-    
-}
-.cifra {
-    width: 61px;
-}
+

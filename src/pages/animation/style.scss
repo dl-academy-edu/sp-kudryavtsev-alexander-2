@@ -46,7 +46,11 @@
     overflow: hidden;
     width: 100%;
     
-    
+    &__h2 {
+        position: absolute;
+        left: -1000px;
+        top: -1000px;
+    }
     
     
     

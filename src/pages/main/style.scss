@@ -71,14 +71,22 @@ text-transform: uppercase;
 .partners {
     margin-top: 91px;
     margin-bottom: 90px;
+
+    &__list {
+        list-style-type: none;
+        display:flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+    
 }
 
-.partners-list {
-    list-style-type: none;
-    display:flex;
-    justify-content: space-between;
-    padding: 0;
-}
+// .partners-list {
+//     list-style-type: none;
+//     display:flex;
+//     justify-content: space-between;
+//     padding: 0;
+// }
 
 .d-l-k {
  display: flex;

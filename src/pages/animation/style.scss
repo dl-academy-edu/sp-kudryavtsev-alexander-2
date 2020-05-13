@@ -75,7 +75,7 @@
         bottom: 6%;
         left: 72%;
         position: absolute;
-        z-index: 6;
+        z-index: 10;
     }
     &__sun {
         max-width: 100%;
@@ -143,12 +143,13 @@
         z-index: 10;
     }
     &__message-taxi {
-       
+        opacity: 0;
         max-width: 100%;        
         bottom: 44%;
         left: 36%;
         position: absolute;
         animation: message-taxi 10s forwards;
+        animation-iteration-count:infinite ;
         z-index: 5;
         
     
@@ -158,8 +159,9 @@
         position: absolute;
         left: -50%;
         bottom: 15%;
-        animation: taxi 10s forwards;
-        z-index: 5;
+        animation: taxi 10s forwards ;
+        animation-iteration-count:infinite ;
+        z-index: 8;
         
     
     }
@@ -204,22 +206,102 @@
         z-index: 4;
     }
     &__message-man {
+        opacity: 0;
         max-width: 100%;
         bottom: 54%;
         left: 24.5%;
         position: absolute;
+        animation: message-man 10s forwards;
+        animation-iteration-count:infinite ;
         z-index: 10;
     }
     &__message-woman {
+        opacity: 0;
         max-width: 100%;
         bottom: 42%;
         left: 14%;
+        position: absolute;
+        animation: message-woman 10s forwards;
+        animation-iteration-count:infinite ;
+        z-index: 10;
+    }
+    &__hand-man {
+        max-width: 100%;
+        bottom: 32%;
+        left: 25%;
+        position: absolute;
+        animation: hand-man 10s forwards;
+        animation-iteration-count:infinite ;
+        z-index: 9;
+    }
+    &__man-suitcases {
+        max-width: 100%;
+        bottom: 6.5%;
+        left: 31%;
+        position: absolute;
+        z-index: 10;
+    }
+    &__hand-man2 {
+        max-width: 100%;
+        bottom: 29%;
+        left: 30.8%;
         position: absolute;
         z-index: 10;
     }
     
 
 }
+@keyframes hand-man {
+    
+    0%, 17%, 51%, 68%, 85%, 100% {      
+        transform: rotate( 60deg );
+        transform-origin: 10px 10px;
+      } 
+    
+      34%{      
+        transform: rotate( -90deg );
+      }
+    }
+
+
+@keyframes message-man {
+    from, to {
+        bottom: 54%;
+        left: 24.5%;
+    }
+    20% {
+        opacity: 0;
+     }
+     30% {
+        bottom: 54%;
+        left: 24.5%;
+        opacity: 1;
+        
+    }
+     50% {
+        opacity: 0;
+     }
+}
+
+@keyframes message-woman {
+        from, to {
+        bottom: 42%;
+        left: 14%;
+        }
+        10% {
+            opacity: 0;
+         }
+         20% {
+            bottom: 42%;
+            left: 14%;
+            opacity: 1;
+            
+        }
+         45% {
+            opacity: 0;
+         }
+}
+
 @keyframes message-taxi {
     
     from, to {
@@ -227,11 +309,18 @@
         bottom: 43%;
         left: 87%;
      }
+     40% {
+        opacity: 0;
+     }
+
      50% {
-        
+        opacity: 1;
         bottom: 43%;
         left: 35%;
     }
+     55% {
+        opacity: 0;
+     }
  }
 
 
@@ -278,15 +367,19 @@
     
 
  @keyframes taxi {
-     from, to {
+     from {
         
         bottom: 13%;
-        left: 72%;
+        left: 82%;
      }
      50% {
         
         bottom: 13%;
         left: 20%;
+    }
+    to {
+        bottom: 13%;
+        left: -50%;
     }
  }
 

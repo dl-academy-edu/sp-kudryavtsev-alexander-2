@@ -61,7 +61,22 @@ color: #1E0606;
 .arrow-4-pages {
     border: 0;
     background: none;
+    transition: .4s;
+
+    &:hover {
+          fill: #C29974;
+    }  
+  
+    &:active {
+      fill: #C29974;
+      opacity: 0.5;
+    }
+  
     
+}
+
+.svg-2:hover  polyline {
+    stroke: #C29974;
 }
 .arrows-l-r {
     width: 13px;

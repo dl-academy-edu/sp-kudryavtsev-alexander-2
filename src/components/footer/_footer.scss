@@ -83,11 +83,10 @@ color: #FFFFFF;
 }
   &__rating-button {
     padding: 0;
-    border: 0;
-    
+    border: 0;    
     border-radius: 15px;
     width: 17px;
-    height: 17px;
+    height: 16px;
     margin-right: 2px;
     background: #434343;
 
@@ -118,8 +117,9 @@ color: #FFFFFF;
   &__rating-buttons {
         display: flex;
         margin-left: 25px;
+        
     }
-
+    
   &__email-submit {
         display: flex;
         margin-top: 9px;
@@ -149,6 +149,11 @@ color: #FFFFFF;
     border: 0;
     }
 
+
+
+&__star:hover  path {
+  transition: fill .4s;
+  fill:#836E5B; 
+  
 }
-
-
+}

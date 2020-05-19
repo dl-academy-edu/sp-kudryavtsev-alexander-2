@@ -19,4 +19,22 @@ window.addEventListener("keydown", function (event) {
         buttonOpen.focus();
     }
 })
+
+// mobile header
+
+var buttonMobileheadr = document.querySelector(".header_menu_js");
+var buttonCloseMobileheadr = document.querySelector(".mobile-header__button-close_js");
+var mobileHeader = document.querySelector(".mobile-header");
+
+buttonMobileheadr.addEventListener("click", function (){
+    mobile-header.classList.add("mobile-header_open");
+
+});
+
+buttonCloseMobileheadr.addEventListener("click", function (){
+    mobile-header.classList.remove("mobile-header_open");
+
+});
+
+
   

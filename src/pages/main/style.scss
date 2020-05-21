@@ -2,6 +2,8 @@
 .poster {
     position: relative;    
     background: #EEE4DB; 
+   
+    
 
 
   &__palochki {
@@ -19,6 +21,13 @@
     padding-top: 89px;
     margin-top: 130px;
     position: relative;
+    @media (max-width: 768px)
+    {
+        margin-top: 30px;
+        overflow: hidden;
+    }
+
+
 }
   &__title {
     font-family: "Montserrat";
@@ -34,9 +43,16 @@
     position: absolute;
     width: 635.49px;
     height: 461px;
-    left: 448px;
-    bottom: 0%;    
+    right: 106px;
+    bottom: 0%;  
+
+    @media (max-width: 1180px) {
+
+    width: 50vw;
+    height: 37.3vw;
+    right: 8px;
 }
+  }
   &__Designed-in-Slovenia {
     font-family: 'Crimson Text';
     font-style: italic;
@@ -46,10 +62,15 @@
     margin-top: 0;
 }
   &__down {
-    width: 1180px;
+    
     height: 39px;
     margin: 0;
     background: #C29974;
+    @media (max-width: 768px) {
+        max-width: 678px;
+        
+     
+      }
 }
 
   &__mini {
@@ -64,6 +85,7 @@ justify-content: center;
 align-items: center;
 text-align: center;
 text-transform: uppercase;
+
 }
 }
 
@@ -71,28 +93,54 @@ text-transform: uppercase;
 .partners {
     margin-top: 91px;
     margin-bottom: 90px;
+    
+    
+        
+        padding: 0 15px;
+    
 
     &__list {
         list-style-type: none;
         display:flex;
         justify-content: space-between;
         padding: 0;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        
+ 
+        &__width {
+        @media (max-width: 768px) {
+            
+            width: 106px;
+            
+         
+          }
+          
+        }
     }
-    
 }
 
-// .partners-list {
-//     list-style-type: none;
-//     display:flex;
-//     justify-content: space-between;
-//     padding: 0;
-// }
+
 
 .d-l-k {
  display: flex;
  justify-content: space-around;
  position: relative;
  align-items: baseline;
+ padding: 0 15px;
+ overflow: hidden;
+    
+    
+    
+        @media (max-width: 375px)
+     {
+        
+        flex-wrap: wrap;
+    }
+    
+  
+
 }
 
 .design-Life-kids {
@@ -114,8 +162,7 @@ color: #1E0606;
 .design-Life-kids-smalll {
     width: 483px;
 height: 66px;
-left: 740px;
-top: 2110px;
+
 
 font-family: 'Open Sans';
 font-style: normal;
@@ -128,8 +175,6 @@ color: #1E0606;
 .about-Us {
     width: 85px;
 height: 33px;
-left: 140px;
-top: 2100px;
 
 font-family: 'Crimson Text';
 font-style: italic;
@@ -175,8 +220,8 @@ background: #E1F0F7;
 
 
 .map-image {
-width: 483px;
-height: 196px;
+width: 100%
+
 
 }
 
@@ -192,6 +237,31 @@ color: #1E0606;
 margin-top: 90px;
 
 
+}
+
+.categore-products {
+   
+    padding: 0 15px;
+    overflow: hidden;
+
+}
+
+.category {
+    width: 280px;
+    min-width: 280px;
+    height: 270px;
+    @media (max-width: 768px)
+   {
+    width: 259px;
+    min-width: 259px;
+    height: 249px;
+    @media (max-width: 375px)
+ {
+    width: 247px;
+    min-width: 247px;
+    height: 238px;
+}
+}
 }
 
 .category-pictyre {
@@ -215,12 +285,23 @@ margin-top: 90px;
 }
 
 .arrow {
-    width: 37px;
-height: 37px;
+    max-width: 37px;
+    max-height: 37px;
 padding: 0;
 border: 0;
 margin-right: 6px;
-
+width: 100%;
+@media (max-width: 768px)
+ {
+    max-width: 36px;
+    max-height: 36px;
+    @media (max-width: 375px)
+ {
+    max-width: 33px;
+    max-height: 33px;
+    padding: 2px 0 0;
+}
+ }
 }
 
 .HZ {
@@ -240,7 +321,7 @@ color: #1E0606;
 
 .lattery {
     position: relative;
-    
+    margin-right: 20px;
 
 }
 
@@ -289,13 +370,29 @@ color: #FFFFFF;
 .about-purchase {
   display: flex;
   margin-top: 94px;
-
+  padding: 0 15px;
+  overflow: hidden;
+  
+    
+    
+        @media (max-width: 375px)
+     {
+        padding: 0 15px;
+        flex-wrap: wrap;
+    }
+    
+    
+ 
+  
 }
 
 .woman {
     
     margin-left: 120px;
-    
+    @media (max-width: 375px) 
+    {
+        margin-left: 0;
+    }
    
 }
 
@@ -345,14 +442,17 @@ margin-bottom: 22px;
 .woman-text {
     width: 480px;
 
-left: 710px;
-top: 1510px;
 
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: normal;
 font-size: 16px;
 line-height: 22px;
+@media (max-width: 768px)
+{
+    font-size: 14px;
+line-height: 19px;
+}
 
 
 

@@ -154,10 +154,16 @@
   background-color: rgba(125, 151, 218, 0.8);
   display: none;
 
-  @media (max-width: 768px) {
-    display: initial;
-  }
   
+  @media (max-width: 768px) {
+    display:initial;
+  }
+  transform: translateY(-100%);
+  transition: 0.4s transform;
+
+  &__open {
+    transform: translateY(0);
+  }
   
   
   &__content {

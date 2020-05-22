@@ -1,0 +1,29 @@
+.svg {
+    position: relative;
+    left: 50%;
+}
+
+.svg-2 {
+    position: relative;
+    left: 30%;
+}
+.frame {
+    position: relative;
+    left: 50%;
+    bottom: 50%;
+}
+.path_line {
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-name: line;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    stroke-dasharray: 400;
+    stroke-dashoffset: 400;
+   
+}
+@keyframes line {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
